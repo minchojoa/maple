@@ -1,0 +1,21 @@
+version: '3'
+services:
+  gateway:
+    build: ./apps/gateway
+    ports:
+      - "3000:3000"
+    depends_on:
+      - auth
+      - event
+  auth:
+    build: ./apps/auth
+    ports:
+      - "3001:3000"
+  event:
+    build: ./apps/event
+    ports:
+      - "3002:3000"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
