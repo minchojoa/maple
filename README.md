@@ -9,12 +9,12 @@ docker-compose up --build
 실제 인게임에서 자주 이루어지는 보스 격파시(특정 퀘스트 클리어) 포인트 지급(보상 아이템)을 구현해 보았습니다.
 
 ## API List
-POST /auth/register	역할 기반 사용자 등록
-POST /auth/login	로그인하여 토큰(역할별 권한) 발행
-POST /event/create	이벤트 및 보상 등록
-POST /event/claim	유저 보상 요청
-GET /event/all		유저가 보상 가능한 이벤트를 미리 조회 가능
-GET /event/claims	보상 요청 내역 확인
+POST /auth/register  역할 기반 사용자 등록
+POST /auth/login     로그인하여 토큰(역할별 권한) 발행
+POST /event/create   이벤트 및 보상 등록
+POST /event/claim    유저 보상 요청
+GET /event/all       유저가 보상 가능한 이벤트를 미리 조회 가능
+GET /event/claims    보상 요청 내역 확인
 
 
 ## 조건 검증방식 [POSTMAN 이용]
